@@ -39,6 +39,7 @@ header a:hover {
   background-color: #00ffff;
   text-align: center;
   color: black;
+  margin-bottom: 0%;
 }
 nav {
   font-size: 120%; /* fz120% */
@@ -209,62 +210,60 @@ video {
   width: 100%;
 }
 
-@media (max-width: 600px) {
-  header {
-    background-image: none;
-  }
-
-  #homehero,
-  #yurthero,
-  #trailhero,
-  #ocean-sunsethero {
-    background-size: auto;
-  }
-  #special table {
-    display: block;
-    border-bottom: none;
-  }
-  #special td,
-  #special th {
-    display: block;
-  }
-  #special thead {
-    display: none;
-  }
-  td.package::before {
-    content: "Package:";
-  }
-  td.description::before {
-    content: "Description";
-  }
-  td.nights::before {
-    content: "Nights";
-  }
-  td.cost::before {
-    content: "Cost";
-  }
-  td.package,
-  td.description,
-  td.nights,
-  td.cost {
-    padding-left: 35%; /* pl35%   This controls my yurt */
-    position: relative;
-    text-align: left;
-    font-size: 4vw;
-  }
-  td::before {
-    position: absolute; /* pos:a */
-    top: 10px;
-    left: 0.5em;
-    font-weight: bold; /* fwb */
-    color: #1976d2; /* c#1976d2 */
-  }
-  td:last-of-type {
-    border-bottom: 2px;
-  }
+header {
+  background-image: none;
 }
 
-@media (min-width: 600px) {
+#homehero,
+#yurthero,
+#trailhero,
+#ocean-sunsethero {
+  background-size: auto;
+}
+#special table {
+  display: block;
+  border-bottom: none;
+}
+#special td,
+#special th {
+  display: block;
+}
+#special thead {
+  display: none;
+}
+td.package::before {
+  content: "Package:";
+}
+td.description::before {
+  content: "Description";
+}
+td.nights::before {
+  content: "Nights";
+}
+td.cost::before {
+  content: "Cost";
+}
+td.package,
+td.description,
+td.nights,
+td.cost {
+  padding-left: 35%; /* pl35%   This controls my yurt */
+  position: relative;
+  text-align: left;
+  font-size: 4vw;
+}
+td::before {
+  position: absolute; /* pos:a */
+  top: 10px;
+  left: 0.5em;
+  font-weight: bold; /* fwb */
+  color: #1976d2; /* c#1976d2 */
+}
+td:last-of-type {
+  border-bottom: 2px;
+}
+
+@media (max-width: 600px) {
   #wrapper {
     margin: auto; /* m:a */
     width: 80%;
